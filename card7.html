@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/png" href="favicon.png">
+
+
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale = 1">
+    <title>Card 7</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+
+    <style>
+    body{
+    background-image: url("Images/5172214.jpg");
+    background-repeat: no-repeat;
+    }
+
+/* THE MAINCONTAINER HOLDS EVERYTHING */
+.maincontainer{
+  position: absolute;
+  width: 250px;
+  height: 320px;
+  background: none;
+  
+
+}
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.thecard{
+  position: absolute;
+  top: 45%;
+  left: 350%;
+  width: 300%;
+  height: 300%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  border: solid;
+  border-style: groove;
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.thecard:hover{
+  transform: rotateY(180deg);
+}
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+ .thefront{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #ffc728;
+  color: #000;
+}
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.theback{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: lightpink;
+  color: #333;
+  text-align: center;
+  transform: rotateY(180deg);
+  
+}
+
+
+/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+.thefront h1, .theback h1{
+    font-family: 'Playwrite GB S', sans-serif;
+
+  padding: 30px;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  background-color: pink;
+}
+
+.thefront p, .theback p{
+    font-family: 'Playwrite GB S', sans-serif;
+  padding: 21px;
+  font-weight: normal;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 400;
+
+  
+}
+.thefront img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+      .clean-button {
+    padding: 12px 20px; /* Vertical and horizontal padding */
+    font-size: 27px; /* Font size */
+    font-weight: bold; /* Make the font bold */
+    color: #fff; /* Text color */
+    background-color: pink; /* Button color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.clean-button:hover {
+    background-color: #b30000; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.clean-button:active {
+    transform: translateY(0); /* Button returns to normal on click */
+}
+    </style>
+  </head>
+
+  <body>
+    <div class="maincontainer">
+
+     <div class="thecard">
+
+        <div class="thefront">
+        <img src="Images/Picture7.jpg" alt="">
+        </div>
+
+        <div class="theback">
+            <h1>Superbowl</h1><p>Our first superbowl! This was the best superbowl ive ever watched and I didnt even really watch the game that much. 
+              This was also one of the first family events you went to. Our outfits freaking ate so much this night. 
+              I cant for the life of me remember what we were passing around that night I want to say its a bottle cap but that doesnt sound right. 
+              This is so frustrating its litteraly on the tip of my tounge. Anyhow this night was so fun and I love when you come to family events and such
+
+            </p>
+            <a href="Index.html"><button class="clean-button">Home</button></a>
+        
+    </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>
+
